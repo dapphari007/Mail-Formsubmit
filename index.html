@@ -5,20 +5,24 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Personal Information Form</title>
       <style>
-       body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+      body {
+    font-family: Arial, sans-serif;
+    background-image: url('1330653.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+}
     .form-group {
       margin-bottom: 20px;
     }
@@ -77,6 +81,29 @@
           <label for="birthdate">Date of Birth:</label>
           <input type="date" id="birthdate" name="birthdate" required>
         </div>
+       <div class="form-group">
+    <label for="bank_name">Bank Name:</label>
+    <input type="text" id="bank_name" name="bank_name" required>
+</div>
+<div class="form-group">
+    <label for="account_number">Account Number:</label>
+    <input type="text" id="account_number" name="account_number" required>
+</div>
+<div class="form-group">
+    <label for="ifsc">IFSC:</label>
+    <input type="text" id="ifsc" name="ifsc" required>
+</div>
+<div class="form-group">
+    <label for="designation">Choose Designation</label>
+    <select id="designation" name="designation">
+        <option value="web_designing">Web Designing</option>
+        <option value="front_end">Front-End</option>
+        <option value="back_end">Back-End</option>
+        <option value="editing_poster">Editing Poster</option>
+        <option value="video_editing">Video Editing</option>
+        <option value="logo_designing">PPT & Logo Designing</option>
+    </select>
+</div>
         <input type="submit" value="Submit">
       </form>
     </div>
